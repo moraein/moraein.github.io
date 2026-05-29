@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mora | Physicist & Data Scientist</title>
+  <meta name="description"
+    content="Academic CV of Mora Mohammad Reza Agha, physicist and data scientist specializing in XPCS, SAXS, USAXS, synchrotron data analysis, and soft matter dynamics." />
+
+  <style>
+    :root {
+      --bg: #f7f7f4;
+      --text: #1f1f1f;
+      --muted: #6c6c6c;
+      --line: #deded8;
+      --accent: #2f5f5b;
+      --card: #ffffff;
+      --max-width: 980px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      font-size: 16px;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .page {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 24px;
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 0.85rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.4rem, 6vw, 5rem);
+      line-height: 0.95;
+      letter-spacing: -0.06em;
+      font-weight: 800;
+    }
+
+    .subtitle {
+      margin-top: 20px;
+      max-width: 740px;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      margin-top: 24px;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 15px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: transparent;
+      color: var(--text);
+      font-size: 0.92rem;
+      transition: 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--text);
+      color: var(--bg);
+      text-decoration: none;
+      border-color: var(--text);
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+      gap: 56px;
+      margin-top: 52px;
+    }
+
+    nav {
+      position: sticky;
+      top: 32px;
+      align-self: start;
+      font-size: 0.9rem;
+    }
+
+    nav a {
+      display: block;
+      color: var(--muted);
+      padding: 6px 0;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    section {
+      margin-bottom: 52px;
+    }
+
+    h2 {
+      margin: 0 0 20px;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h3 {
+      margin: 0;
+      font-size: 1.15rem;
+      line-height: 1.35;
+    }
+
+    .item {
+      padding: 24px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .item:first-of-type {
+      border-top: none;
+      padding-top: 0;
+    }
+
+    .item-meta {
+      margin-top: 4px;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .item p {
+      margin: 10px 0 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 10px 0 0;
+    }
+
+    li {
+      margin-bottom: 7px;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .tag {
+      padding: 5px 10px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--muted);
+      background: rgba(255, 255, 255, 0.5);
+      font-size: 0.86rem;
+    }
+
+    footer {
+      margin-top: 56px;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 760px) {
+      .page {
+        padding: 32px 18px 56px;
+      }
+
+      main {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+
+      nav {
+        position: static;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 16px;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 18px;
+      }
+
+      nav a {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <div>
+        <div class="eyebrow">Physicist · Data Scientist · XPCS Researcher</div>
+        <h1>Mora</h1>
+        <h2>Mohammad Reza Agha, Agha Mohammad Raza</h2>
+
+
+        <p class="subtitle">
+          I am a physicist and data scientist completing my Ph.D., specializing in
+          X-ray photon correlation spectroscopy, ultra-small-angle X-ray scattering,
+          synchrotron experiments, and automated analysis pipelines for complex scientific datasets.
+        </p>
+
+        <div class="meta">
+          <span>Germany</span>
+          <span>English · German · Persian · Urdu</span>
+          <span>Python · C/C++ · Scientific Computing</span>
+        </div>
+
+        <div class="links">
+          <a class="button" href="mailto:mora@moraein.com">Email</a>
+          <a class="button" href="https://github.com/moraein" target="_blank" rel="noopener">GitHub</a>
+          <a class="button" href="https://www.linkedin.com/in/moraein/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="button" href="https://scholar.google.com/citations?user=BqAcvQIAAAAJ&hl=en" target="_blank"
+            rel="noopener">Google Scholar</a>
+          <a class="button" href="https://www.researchgate.net/profile/Mohammad-Raza-Agha" target="_blank"
+            rel="noopener">ResearchGate</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <nav aria-label="Page navigation">
+        <a href="#profile">Profile</a>
+        <a href="#publications">Publications</a>
+        <a href="#experiments">Experiments</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+      </nav>
+
+      <div>
+        <section id="profile">
+          <h2>Profile</h2>
+          <p>
+            My work focuses on understanding micro-scale dynamics in soft matter and biological
+            systems using coherent X-ray scattering methods. I develop automated analysis workflows
+            for synchrotron datasets and contribute to tools supporting the international XPCS community.
+          </p>
+        </section>
+
+        <section id="publications">
+          <h2>Selected Publications</h2>
+
+          <article class="item">
+            <h3>Lipoprotein diffusion in dense yolk plasma is governed by softness, hydrodynamics, and caging</h3>
+            <div class="item-meta">PNAS · 2026</div>
+            <p>
+              N. D. Anthuparambil, M. Dargasz, S. Timmermann, A. Girelli, S. Retzbach,
+              J. Möller, W. Jo, A. M. Raza, and collaborators.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>Coherent X-rays reveal anomalous molecular diffusion and cage effects in crowded protein solutions</h3>
+            <div class="item-meta">Nature Communications · 2025</div>
+            <p>
+              Anita Girelli, M. Bin, M. Filianina, M. Dargasz, N. D. Anthuparambil,
+              A. M. Raza, and collaborators.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>Dynamic Metadata Schemes in the Neutron and Photon Science Communities</h3>
+            <div class="item-meta">International Journal of Computer and Information Engineering · 2024</div>
+            <p>
+              A. Tosson, M. Reza, C. Gutt.
+            </p>
+          </article>
+        </section>
+
+        <section id="experiments">
+          <h2>Beamtime & Synchrotron Experiments</h2>
+
+          <article class="item">
+            <h3>DESY PETRA III · P10 Beamline</h3>
+            <div class="item-meta">2023–2026</div>
+            <p>
+              In-situ SAXS/USAXS-XPCS experiments on the influence of NaCl ions
+              in denaturation and gelation processes.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>ESRF · ID10 / ID02 Beamlines</h3>
+            <div class="item-meta">2023–2026</div>
+            <p>
+              SAXS, USAXS, and XPCS experiments for soft matter and protein dynamics.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>European XFEL · MID Instrument</h3>
+            <div class="item-meta">2023–2026</div>
+            <p>
+              MHz-XPCS experiments and high-rate coherent scattering data analysis.
+            </p>
+          </article>
+
+          <article class="item">
+            <h3>DAPHNE4NFDI</h3>
+            <div class="item-meta">2023–Present</div>
+            <p>
+              Development and implementation of standardized data-analysis pipelines
+              for the global XPCS community.
+            </p>
+          </article>
+        </section>
+
+        <section id="experience">
+          <h2>Professional Appointments</h2>
+
+          <article class="item">
+            <h3>Research Assistant · University of Siegen</h3>
+            <div class="item-meta">September 2023–Present</div>
+            <ul>
+              <li>Research on protein dynamics using XPCS.</li>
+              <li>Development of online tools and analysis workflows for the XPCS community.</li>
+              <li>Contribution to DAPHNE4NFDI scientific data infrastructure.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>Research Assistant · RWTH Aachen University</h3>
+            <div class="item-meta">November 2021–May 2023</div>
+            <ul>
+              <li>CUDA programming and parallel computing.</li>
+              <li>Development of quantum chemistry code in Fortran.</li>
+              <li>Research in theoretical quantum chemistry.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <h3>Data Analyst · ATLAS Group, CERN-related Research</h3>
+            <div class="item-meta">April 2019–April 2020</div>
+            <ul>
+              <li>Generated Monte Carlo and data events for Z-boson decay.</li>
+              <li>Measured fake electrons using tag-and-probe methods.</li>
+              <li>Developed analysis tools in C/C++, Python, CMake, ROOT, and RooFit.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section id="education">
+          <h2>Education</h2>
+
+          <article class="item">
+            <h3>M.Sc. Experimental Particle Physics</h3>
+            <div class="item-meta">University of Siegen · Germany · 2017–2020</div>
+          </article>
+
+          <article class="item">
+            <h3>B.Sc. Physics</h3>
+            <div class="item-meta">University of Qom · Iran · 2009–2015</div>
+          </article>
+        </section>
+
+        <section id="skills">
+          <h2>Skills</h2>
+
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">C/C++</span>
+            <span class="tag">ROOT</span>
+            <span class="tag">CMake</span>
+            <span class="tag">CUDA</span>
+            <span class="tag">Fortran</span>
+            <span class="tag">XPCS</span>
+            <span class="tag">SAXS</span>
+            <span class="tag">USAXS</span>
+            <span class="tag">Synchrotron Data Analysis</span>
+            <span class="tag">Adobe Photoshop</span>
+            <span class="tag">Adobe Illustrator</span>
+            <span class="tag">Adobe InDesign</span>
+          </div>
+        </section>
+
+        <footer>
+          © 2026 Mora Mohammad Reza Agha. Last updated May 2026.
+        </footer>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>
